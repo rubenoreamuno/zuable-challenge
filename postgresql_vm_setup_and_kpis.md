@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f77c5560-f85f-46f5-9a0a-047f00d3eada)# 🛠️ PostgreSQL Deployment & KPI Extraction on Google Cloud VM
+# 🛠️ PostgreSQL Deployment & KPI Extraction on Google Cloud VM
 
 ## 🚀 Step 1: Create a Virtual Machine
 
