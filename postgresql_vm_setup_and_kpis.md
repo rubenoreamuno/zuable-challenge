@@ -172,3 +172,5 @@ LIMIT 3;
 ## ✅ Notes
 - Indexes are used to optimize query performance.
 - Queries `select` only the value of the answer for each question to reduce resource consumption.
+- ![image](https://github.com/user-attachments/assets/a7da7b58-4b57-40b4-9945-34ffd22707f5)
+
