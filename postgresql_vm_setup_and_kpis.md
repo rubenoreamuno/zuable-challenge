@@ -1,4 +1,4 @@
-# 🛠️ PostgreSQL Deployment & KPI Extraction on Google Cloud VM
+![image](https://github.com/user-attachments/assets/f77c5560-f85f-46f5-9a0a-047f00d3eada)# 🛠️ PostgreSQL Deployment & KPI Extraction on Google Cloud VM
 
 ## 🚀 Step 1: Create a Virtual Machine
 
@@ -174,3 +174,18 @@ LIMIT 3;
 - Queries `select` only the value of the answer for each question to reduce resource consumption.
 - ![image](https://github.com/user-attachments/assets/a7da7b58-4b57-40b4-9945-34ffd22707f5)
 
+
+# 🖼️ Execution Evidence
+
+The following screenshot demonstrates successful execution of the SQL queries and index creation on the PostgreSQL instance running in the Google Cloud VM:
+
+![Query Execution Screenshot]((https://github.com/user-attachments/assets/a01d373b-1dc6-4674-8ec9-3825fa1b35f9)
+
+✅ As shown:
+- Indexes were created for optimized performance.
+- The three requested KPIs were computed:
+  - 📅 Peak order date: `2024-12-06`
+  - 🥇 Most demanded product: `Product_5`
+  - 📦 Top 3 categories: Shirts (50), Jackets (30), Pants (29)
+
+This evidence confirms the correct functioning of the setup and query logic.
