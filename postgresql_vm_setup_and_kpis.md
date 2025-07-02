@@ -144,7 +144,7 @@ LIMIT 1;
 
 ```sql
 CREATE INDEX idx_orders_product_id ON orders(product_id);
-CREATE INDEX idx_products_id ON products(id);  -- usually PRIMARY KEY
+CREATE INDEX idx_products_id ON products(id);  
 
 SELECT p.name
 FROM orders o
