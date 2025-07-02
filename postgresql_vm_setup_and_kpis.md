@@ -171,4 +171,4 @@ LIMIT 3;
 
 ## ✅ Notes
 - Indexes are used to optimize query performance.
-- Queries use `LIMIT` to reduce resource consumption.
+- Queries `select` only the value of the answer for each question to reduce resource consumption.
