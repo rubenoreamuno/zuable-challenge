@@ -76,7 +76,7 @@ Also proposed:
 
 ## 📧 Submission
 
-Once complete, share this repository or its contents with:
+Once completed, this repository is delivered to:
 
 - 📤 Vladyslav Dodonov (vladyslav.dodonov@zubale.com)
 - 📤 CC: Maria Bravo
