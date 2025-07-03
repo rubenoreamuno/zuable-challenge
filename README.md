@@ -77,6 +77,7 @@ or see [`docker-compose.yml`](./docker/docker-compose.yml)
 ## 🛠️ Technologies Used
 
 - Python 3.10
+- Pyspark
 - PostgreSQL (via Docker)
 - Google Cloud Platform
 - SQL
