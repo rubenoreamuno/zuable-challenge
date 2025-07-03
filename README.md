@@ -9,15 +9,12 @@ This repository contains the solution to the Lead Data Engineer assessment provi
 ```
 .
 ├── data/                          # Original CSV files
-├── scripts/                       # Python scripts for processing
-├── sql/                           # SQL scripts for PostgreSQL setup and queries
-├── docker/                        # Docker or docker-compose configuration
-├── kpis/                          # Markdown documentation for each KPI
+├── scripts/                       # SQL scripts to create the tables
+├── challenges/                    # The challenges notebooks
 ├── outputs/                       # Generated CSV outputs
 │   ├── order_full_information.csv
 │   ├── fixed_order_full_information.csv
 │   └── kpi_product_orders.csv
-├── postgresql_vm_setup_and_kpis.md
 └── README.md                      # This file
 ```
 
