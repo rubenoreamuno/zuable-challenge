@@ -172,14 +172,14 @@ LIMIT 3;
 ## ✅ Notes
 - Indexes are used to optimize query performance.
 - Queries `select` only the value of the answer for each question to reduce resource consumption.
-- ![image](https://github.com/user-attachments/assets/a7da7b58-4b57-40b4-9945-34ffd22707f5)
+
 
 
 # 🖼️ Execution Evidence
 
 The following screenshot demonstrates successful execution of the SQL queries and index creation on the PostgreSQL instance running in the Google Cloud VM:
 
-![Query Execution Screenshot]((https://github.com/user-attachments/assets/a01d373b-1dc6-4674-8ec9-3825fa1b35f9)
+![image](https://github.com/user-attachments/assets/a7da7b58-4b57-40b4-9945-34ffd22707f5)
 
 ✅ As shown:
 - Indexes were created for optimized performance.
