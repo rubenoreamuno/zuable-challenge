@@ -62,18 +62,6 @@ Also proposed:
 
 ---
 
-## 🐳 Docker Environment
-
-To replicate the PostgreSQL environment locally, you can use:
-
-```bash
-docker-compose up -d
-```
-
-or see [`docker-compose.yml`](./docker/docker-compose.yml)
-
----
-
 ## 🛠️ Technologies Used
 
 - Python 3.10
