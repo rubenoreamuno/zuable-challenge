@@ -226,3 +226,73 @@ ORDER BY purchase_days DESC;
 
 ---
 
+## 🔄 ETL/ELT Tool for BigQuery Integration
+
+**Recommended Tool:** Apache Airflow (or Cloud Composer on GCP)
+
+**Why:**  
+Airflow is ideal for building reliable, scalable, and automated data pipelines. It integrates seamlessly with GCP services like Cloud Storage, Dataproc and BigQuery.
+
+**Disclaimer**
+We can build all this following pipeline according to a medallion architecture (bronze, silver, golden) writing this staging tables or files in each schema.
+
+### 🧱 Steps to Build the Pipeline
+1. Cluster provision
+   - Use `DataprocCreateClusterOperator` to create a cluster in Google Cloud Dataproc
+   - Create an init.sh script to run at cluster creation.
+
+2. **Extract**  
+   - Use `DataprocSubmitJobOperator` to fetch raw CSVs from a local source or GCS bucket using Pyspark.
+
+3. **Transform**  
+   - Merge and enrich data using `Pyspark` in `DataprocSubmitJobOperator` tasks.
+   - Convert currency values using external APIs (as shown in Challenge 2).
+
+4. **Load**  
+   - Use `DataprocSubmitJobOperator` to upload cleaned files to a GCS bucket, then load to BigQuery.
+  
+5. **Delete Cluster**
+   - Use `DataprocDeleteClusterOperator` to delete the cluster at the end of the process. 
+
+6. **Schedule**  
+   - Set up DAGs to run daily/weekly.
+   - Monitor with Airflow UI or alerts.
+
+---
+
+## 🤖 AI-Based Pipeline Proposal
+
+**Objective:** Forecast product demand using machine learning.
+
+### 🔍 Why this adds value:
+- Improves inventory accuracy
+- Helps avoid stockouts or overstock
+- Optimizes pricing and promotions
+
+### ⚙️ Pipeline Architecture
+
+1. **Data Sources**
+   - Historical `orders` + `products` data
+   - Enriched with external variables (e.g. holidays, campaigns)
+
+2. **Preprocessing**
+   - Aggregate order volume per product by day/week
+   - Normalize quantities and engineer time-based features
+
+3. **Modeling**
+   - Use time series models such as:
+     - Facebook Prophet
+     - XGBoost with lag features
+     - LSTM (for large datasets)
+
+4. **Serving**
+   - Export predictions to BigQuery
+   - Build Looker/Power BI dashboards with forecast overlays
+
+5. **Automation**
+   - Retrain models monthly using Airflow
+   - Validate performance via MAPE or RMSE
+
+This ML pipeline would convert raw transactional data into future-ready business intelligence.
+
+
