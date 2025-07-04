@@ -79,7 +79,7 @@ Also proposed:
 Once completed, this repository is delivered to:
 
 - 📤 Vladyslav Dodonov (vladyslav.dodonov@zubale.com)
-- 📤 CC: Maria Bravo
+- 📤 CC: Maria Bravo (maria.bravo@zubale.com )
 
 ---
 
