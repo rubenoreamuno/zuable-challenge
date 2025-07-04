@@ -14,7 +14,11 @@ This repository contains the solution to the Lead Data Engineer assessment provi
 ├── outputs/                       # Generated CSV outputs
 │   ├── order_full_information.csv
 │   ├── fixed_order_full_information.csv
-│   └── kpi_product_orders.csv
+│   └── kpi_product_orders/
+|       ├── demanded-categories.csv
+|       ├── demanded-products.csv
+|       ├── fixed_order_full_information.csv
+|       └── max-orders.csv
 └── README.md                      # This file
 ```
 
